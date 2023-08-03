@@ -11,7 +11,7 @@ const Create = () => {
 		e.preventDefault();
 		const blog = { title, date, body };
 
-		fetch('http://localhost:8000/blogs', {
+		fetch('https://amldej.github.io/blog-data/db.json', {
 			method: 'POST',
 			headers: { "Content-Type": "application/json" },
 			body: JSON.stringify(blog)
