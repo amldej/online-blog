@@ -58,7 +58,7 @@
 }
 
 .photo {
-  height: 100%;
+  height: 100vh;
 }
 
 .writing {
@@ -226,7 +226,24 @@
 }
 
 
-
+@media only screen and (max-width: 550px) {
+    .photo {
+    height: 70vh;
+    padding-top: 20vh;
+    }
+    .logo {
+      font-size: 25px;
+    }
+    .navbar a {
+  font-size: 10px;
+    }
+    .blog-preview {
+      padding-left: 100px;
+      padding-right: 100px;
+    }
+    .create { 
+  max-width: 300px; 
+}}
 
 
 
