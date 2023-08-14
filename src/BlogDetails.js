@@ -3,18 +3,21 @@ import useFetch from './useFetch';
 
 const BlogDetails = () => {
 	const { id } = useParams();
-	const { data: blog, error, isPending } = useFetch('https://amldej.github.io/blog-data/db.json/' + id);
+	const { data: blog, error, isPending } = useFetch('http://localhost:8000/blogs/' + id);
 	const history = useHistory();
 
 	const handleClick = () => {
-		fetch('https://amldej.github.io/blog-data/db.json/' + blog.id, {
+		fetch('http://localhost:8000/blogs/' + id, {
 			method: 'DELETE'
 		}).then(() => {
 			history.push('/thoughts');
 		})
 	}
 
+	// const selectedItem = blog.find(item => item.id === id);
+
 	return (
+
 		<div className="blog-details">
 			{ isPending && <div>Loading...</div> }
 			{ error && <div>{ error }</div>}
