@@ -127,13 +127,20 @@
   padding: 10px;
 }
 
-.link:hover {
+/*.link:hover {
   border-radius:8px;
   background-color: #fafafa;
+}*/
+
+.deletePost {
+  font-size: 15px;
+  font-family: 'Cormorant Infant';
+  cursor: pointer;
+  float: right;
 }
 
 /* blog details page */
-
+/*
 .blog-details h2 {
   font-size: 40px;
   font-family: 'Cormorant Infant';
@@ -168,7 +175,7 @@
 
 .blog-details h5:hover {
   color: lightgrey;
-}
+}*/
 
 /* create new blog form */
 .create { 
